@@ -25,13 +25,13 @@ public class Main {
     public static void task2() {
         System.out.println("Task 2");
         int[] arr = generateRandomArray();
-        int minExpense = 300_001;
+        int minExpense = arr[0];
         for (int a = 0; a < arr.length; a++) {
             if (arr[a] < minExpense) {
                 minExpense = arr[a];
             }
         }
-        int maxExpense = -1;
+        int maxExpense = arr[0];
         for (int b = 0; b < arr.length; b++) {
             if (arr[b] > maxExpense) {
                 maxExpense = arr[b];
